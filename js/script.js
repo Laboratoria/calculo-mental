@@ -1,14 +1,14 @@
-var numeroBase = Math.floor(Math.random() * 30);
+var numeroBase = Math.floor(Math.random() * 31);
 var operando;
 alert("comienza con " + numeroBase);
 
 
-for (var i = 0; i < 5; i++) {
-	operando = Math.floor(Math.random() * 15);
+for (var i = 0; i <= 5; i++) {
+	operando = (Math.floor(Math.random() * 13)+2);
 
 	switch (Math.floor(Math.random() * 3)) {
 	    case 0:
-	    	operando = Math.floor(Math.random() * 6);
+	    	operando = (Math.floor(Math.random() * 4)+2);
 	   		alert("multiplicalo por " + operando);
 	    	numeroBase *= operando;
 	        break;
